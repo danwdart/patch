@@ -20,11 +20,11 @@ import Data.Patch.IntMap
 import Data.Patch.Map
 
 import Data.Dependent.Map (DMap)
-import Data.Dependent.Sum (DSum (..))
-import Data.GADT.Compare (GCompare (..))
 import qualified Data.Dependent.Map as DMap
+import Data.Dependent.Sum (DSum (..))
 import Data.Functor.Constant
 import Data.Functor.Misc
+import Data.GADT.Compare (GCompare (..))
 import qualified Data.IntMap as IntMap
 import qualified Data.Map as Map
 import Data.Monoid.DecidablyEmpty

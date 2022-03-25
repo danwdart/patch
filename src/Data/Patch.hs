@@ -23,22 +23,18 @@ import Data.Semigroup (Semigroup (..))
 #endif
 import GHC.Generics
 
-import Data.Semigroup.Additive as X
 import Data.Patch.Class as X
 import Data.Patch.DMap as X hiding (getDeletions)
-import Data.Patch.DMapWithMove as X
-  ( PatchDMapWithMove, const2PatchDMapWithMoveWith, mapPatchDMapWithMove
-  , patchDMapWithMoveToPatchMapWithMoveWith
-  , traversePatchDMapWithMoveWithKey, unPatchDMapWithMove
-  , unsafePatchDMapWithMove, weakenPatchDMapWithMoveWith
-  )
+import Data.Patch.DMapWithMove as X (PatchDMapWithMove, const2PatchDMapWithMoveWith, mapPatchDMapWithMove,
+                                     patchDMapWithMoveToPatchMapWithMoveWith,
+                                     traversePatchDMapWithMoveWithKey, unPatchDMapWithMove,
+                                     unsafePatchDMapWithMove, weakenPatchDMapWithMoveWith)
 import Data.Patch.IntMap as X hiding (getDeletions)
 import Data.Patch.Map as X
-import Data.Patch.MapWithMove as X
-  ( PatchMapWithMove, patchMapWithMoveNewElements
-  , patchMapWithMoveNewElementsMap, unPatchMapWithMove
-  , unsafePatchMapWithMove
-  )
+import Data.Patch.MapWithMove as X (PatchMapWithMove, patchMapWithMoveNewElements,
+                                    patchMapWithMoveNewElementsMap, unPatchMapWithMove,
+                                    unsafePatchMapWithMove)
+import Data.Semigroup.Additive as X
 
 -- | A 'Group' is a 'Monoid' where every element has an inverse.
 class (Semigroup q, Monoid q) => Group q where

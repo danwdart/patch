@@ -54,7 +54,7 @@ import Data.Map (Map)
 import qualified Data.Map as Map
 import Data.Some (Some, mkSome)
 import Data.These
-import Data.Type.Equality ((:~:)(Refl))
+import Data.Type.Equality ((:~:) (Refl))
 import Data.Typeable hiding (Refl)
 
 --------------------------------------------------------------------------------

@@ -1,16 +1,16 @@
 {-# LANGUAGE TemplateHaskell #-}
 module Main where
 
-import Test.HUnit (runTestTT, (~:), assertEqual, errors, failures, test)
-import Data.Patch ( Patch(apply) )
-import Data.Patch.MapWithMove ( patchThatChangesMap )
-import Data.Map as Map ( Map, fromList, singleton )
-import Hedgehog (checkParallel, discover, Property, property, forAll, PropertyT, (===))
-import Hedgehog.Gen as Gen ( int )
-import Hedgehog.Range as Range ( linear )
 import Control.Monad (replicateM)
+import Data.Map as Map (Map, fromList, singleton)
+import Data.Patch (Patch (apply))
+import Data.Patch.MapWithMove (patchThatChangesMap)
+import Data.Sequence as Seq (foldMapWithIndex, replicateM)
+import Hedgehog (Property, PropertyT, checkParallel, discover, forAll, property, (===))
+import Hedgehog.Gen as Gen (int)
+import Hedgehog.Range as Range (linear)
 import System.Exit (exitFailure, exitSuccess)
-import Data.Sequence as Seq ( foldMapWithIndex, replicateM )
+import Test.HUnit (assertEqual, errors, failures, runTestTT, test, (~:))
 
 main :: IO ()
 main = do

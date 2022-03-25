@@ -26,12 +26,12 @@ import qualified Data.Patch.MapWithMove as MapWithMove
 
 import Data.Constraint.Extras
 import Data.Dependent.Map (DMap)
-import Data.Dependent.Sum (DSum (..))
 import qualified Data.Dependent.Map as DMap
+import Data.Dependent.Sum (DSum (..))
 import Data.Functor.Constant
 import Data.Functor.Misc
 import Data.Functor.Product
-import Data.GADT.Compare (GEq (..), GCompare (..))
+import Data.GADT.Compare (GCompare (..), GEq (..))
 import Data.GADT.Show (GShow, gshow)
 import qualified Data.Map as Map
 import Data.Maybe

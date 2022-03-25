@@ -10,10 +10,10 @@ Description: This module provides a class to decide whether a monoid element is 
 -}
 module Data.Monoid.DecidablyEmpty where
 
-import Data.Functor.Identity
 import Data.Functor.Const
-import Data.Monoid
+import Data.Functor.Identity
 import Data.Maybe (isNothing)
+import Data.Monoid
 #if MIN_VERSION_base(4,11,0)
 import Data.Ord
 #endif
@@ -23,14 +23,14 @@ import Data.Semigroup hiding (First, Last)
 import GHC.Generics
 #endif
 
-import qualified Data.IntSet as IntSet
 import qualified Data.IntMap as IntMap
+import qualified Data.IntSet as IntSet
 import qualified Data.Map as Map
 import qualified Data.Sequence as Seq
 import qualified Data.Set as Set
 
-import Data.GADT.Compare
 import qualified Data.Dependent.Map as DMap
+import Data.GADT.Compare
 
 -- | A 'DecidablyEmpty' is one where it can be computed whether or not an
 -- arbitrary value is 'mempty'.

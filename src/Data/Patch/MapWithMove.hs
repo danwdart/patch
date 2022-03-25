@@ -67,8 +67,8 @@ module Data.Patch.MapWithMove
 import Data.Coerce
 import Data.Kind (Type)
 import Data.Patch.Class
-import Data.Patch.MapWithPatchingMove (PatchMapWithPatchingMove(..), To)
-import qualified Data.Patch.MapWithPatchingMove as PM -- already a transparent synonym
+import Data.Patch.MapWithPatchingMove (PatchMapWithPatchingMove (..), To)
+import qualified Data.Patch.MapWithPatchingMove as PM
 
 import Control.Lens
 import Data.List

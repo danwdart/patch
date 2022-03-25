@@ -36,3 +36,5 @@ hsenv.log
 /ghci-tmp
 *.dump-*
 *.verbose-core2core
+.direnv
+hie.yaml
