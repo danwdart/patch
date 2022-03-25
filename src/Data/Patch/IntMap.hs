@@ -14,7 +14,7 @@ Patches of this sort allow for insert/update or delete of associations.
 -}
 module Data.Patch.IntMap where
 
-import Control.Lens hiding  (FunctorWithIndex, FoldableWithIndex, TraversableWithIndex)
+import Control.Lens hiding (FoldableWithIndex, FunctorWithIndex, TraversableWithIndex)
 import qualified Control.Lens as L
 import Data.IntMap.Strict (IntMap)
 import qualified Data.IntMap.Strict as IntMap
@@ -23,9 +23,9 @@ import Data.Monoid.DecidablyEmpty
 #if !MIN_VERSION_base(4,11,0)
 import Data.Semigroup (Semigroup (..))
 #endif
-import Data.Patch.Class
-import Data.Functor.WithIndex
 import Data.Foldable.WithIndex
+import Data.Functor.WithIndex
+import Data.Patch.Class
 import Data.Traversable.WithIndex
 
 -- | 'Patch' for 'IntMap' which represents insertion or deletion of keys in the mapping.

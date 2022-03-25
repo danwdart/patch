@@ -70,7 +70,7 @@ import Data.Patch.Class
 import Data.Patch.MapWithPatchingMove (PatchMapWithPatchingMove (..), To)
 import qualified Data.Patch.MapWithPatchingMove as PM
 
-import Control.Lens hiding  (FunctorWithIndex, FoldableWithIndex, TraversableWithIndex)
+import Control.Lens hiding (FoldableWithIndex, FunctorWithIndex, TraversableWithIndex)
 import qualified Control.Lens as L
 import Data.List
 import Data.Map (Map)
@@ -79,9 +79,9 @@ import Data.Proxy
 #if !MIN_VERSION_base(4,11,0)
 import Data.Semigroup (Semigroup (..))
 #endif
-import Data.Traversable (foldMapDefault)
-import Data.Functor.WithIndex
 import Data.Foldable.WithIndex
+import Data.Functor.WithIndex
+import Data.Traversable (foldMapDefault)
 import Data.Traversable.WithIndex
 
 -- | Patch a Map with additions, deletions, and moves.  Invariant: If key @k1@

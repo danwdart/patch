@@ -18,15 +18,15 @@ module Data.Patch.Map where
 
 import Data.Patch.Class
 
-import Control.Lens hiding  (FunctorWithIndex, FoldableWithIndex, TraversableWithIndex)
+import Control.Lens hiding (FoldableWithIndex, FunctorWithIndex, TraversableWithIndex)
 import qualified Control.Lens as L
+import Data.Foldable.WithIndex
+import Data.Functor.WithIndex
 import Data.Map (Map)
 import qualified Data.Map as Map
 import Data.Maybe
 import Data.Monoid.DecidablyEmpty
 import Data.Semigroup (Semigroup (..), stimesIdempotentMonoid)
-import Data.Functor.WithIndex
-import Data.Foldable.WithIndex
 import Data.Traversable.WithIndex
 
 -- | A set of changes to a 'Map'.  Any element may be inserted/updated or
